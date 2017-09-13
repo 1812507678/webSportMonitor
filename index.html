@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>智能运动衣监控</title>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    
+    <script type="text/javascript" src="js/my_ecgcanvas.js" ></script>
+	
+	<script type="text/javascript" src="js/project.js" ></script>
+	<link rel="stylesheet" href="css/project.css"  />
+	<link rel="icon" href="images/logo_icon.png" type="image/x-icon"/>
+</head>
+
+<body style="height: 100%">
+	<!-- <input id="text" type="text" /><button onclick="send()">Send</button>    <button onclick="closeWebSocket()">Close</button>
+	    <div id="message">
+	    </div> -->
+	
+   	
+    <!-- <div class="page_head">
+    	<div id="socketConnectState"></div>
+    		<h2 >智能运动衣监控 <h2>
+    		
+    	</div> -->
+
+	<div class="page_body">
+		<div class="body_left">
+			<div class="left_head"> 
+				用户实时数据 <br/>
+				<div class="left_head_eng">
+					More sports, more safeguard
+				</div>
+			</div>
+
+			<div class="left_body">
+				<div class="left_headline"></div>
+				<div class="left_speed">
+					<div class="left_speed_dec">心率（BPM）</div>
+					<div class="left_speed_text" id="left_rate_text">--</div>
+				</div>
+				<div class="left_sportparam">
+					<div class="sportparam_item_first">
+						<div class="sportparam_item_dec">时间</div>	
+						<div class="sportparam_item_time" id="left_time_text">--</div>
+					</div>
+					<div class="sportparam_item">
+						<div class="sportparam_item_dec">有氧/无氧</div>	
+						<div class="sportparam_item_value" id="left_isoxygen_text">--</div>
+					</div>
+					<div class="sportparam_item_last">
+						<div class="sportparam_item_dec">消耗（Kcal）</div>	
+						<div class="sportparam_item_value" id="left_kcal_text">--</div>
+					</div>
+				</div>
+
+
+				<div class="startrunning" style="position:relative">
+					<div class="boack">
+	 			        <canvas id="background" class="canvasarea"   width="1400px" height="489px" >   <!-- width="1400px" height="400px"  -->
+	 			        </canvas>
+	 			    </div>
+	 			    <div class="boack">
+	 			        <canvas id="line" class="canvasarea" width="1400px" height="489px"> 
+	 			        </canvas>
+	 			    </div>
+
+				</div>
+			</div>
+			
+		</div>
+		<div class="body_right">
+			    <!-- <div class="list_box" id="list_box">
+			        <script type="text/template" data-id="list_tpl">
+			            <div class="right_icon_list_item">
+			                <img src="$iconUrl$" class="right_usericon" />
+			                <p>$username$</p>
+			            </div>
+			        </script>
+			    </div> -->
+
+			    <div class="right_head"> 
+					<div id="right_head_usercount">在线用户：</div> <br/>
+					<div class="right_head_eng">More sports, more safeguard</div>
+				</div>
+			    <div class="list_box" id="list_box" >
+			        <script type="text/template" data-id="list_tpl">
+			       		 
+			            <div class="right_icon_list_item" >
+			            	<div class="right_userinfo_ecgdata">
+ 								<div class="right_userecgdec">心率&nbsp;&nbsp;&nbsp;&nbsp;卡路里</div>
+ 								<div class="right_userecgdata">
+	 								<p class="right_userecgdata_rate" id="right_userecgdata_rate">&nbsp;&nbsp;$heartRate$</p>
+	 								<p class="right_userecgdata_kcal" id="right_userecgdata_kcal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$kcal$</p>
+ 								</div>
+
+ 							</div>
+
+			            	<div class="right_list_headline"></div> <!-- 2b3a40 -->
+			                <a href="#" class ="right_list_a" title = "点击查看数据" onclick="changeEcgData(this)"><div class="right_a_index">$webSocketIndex$</div>
+			                	<img src="$iconUrl$" class="right_usericon" />
+			                </a>
+			                <div class="right_userinfo">
+								<p class="right_username">$username$</p>
+								<p class="right_userother_province">$province$ &nbsp;&nbsp;</p>
+								<p class="right_userother">$sex$ &nbsp;&nbsp;&nbsp;&nbsp;</p>  
+								<p class="right_userother">$age$ &nbsp;&nbsp;</p>
+
+								
+			                </div>
+ 							
+
+			            </div>
+			        </script>
+			    </div>
+
+
+
+			</div>
+		</div>
+	</div>
+
+	<!-- <div class="page_foot">
+			<div class="bootm_text">
+				COPYRIGHT:EMOJI:2016 阿木科技-SMSU<br/>
+				粤ICP备16005435号-1
+			</div>
+	</div> -->
+	
+    
+</body>
+</html>

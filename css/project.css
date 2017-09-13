@@ -1,0 +1,295 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family:Microsoft YaHei;
+	
+}
+body{
+	font-size:62.5%;
+}
+
+/* .page_head{
+	width: 100%;
+	height: 100px;
+	background: #003eFF;
+	
+} */
+
+.body_left{
+	width: 70%;
+	height: 100%; 
+	background: #EDEDED;
+	float: left;
+}
+.left_head{
+	width: 100%;
+	height: 9.1%; 
+	font-size:1.8em;
+	color:#4c5e70;
+	/* background: #FFFFFF; */
+	padding-top: 1.85%;
+	padding-left: 1.428%;
+	overflow: hidden;
+	box-sizing:border-box;
+
+}
+
+.left_head_eng{
+	font-size:0.77em;
+	color:#7b8da0;
+	
+}
+.left_body{
+	width: 100%;
+	height: 90.9%; 
+	/* background: #EED8AE; */
+	padding-left: 20px;
+	padding-right: 20px; 
+	overflow: hidden;
+	box-sizing:border-box;
+}
+.left_headline{
+	width: 100%;
+	height: 2px; 
+	background: #D4D4D4;
+}
+.left_speed{
+	width: 100%;
+	height: 22.0%;
+	margin-top: 20px;
+	overflow: hidden;
+	box-sizing:border-box;
+	text-align: center;
+	background: #FFFFFF;
+}
+.left_speed_dec{
+	font-size:1.5em;
+	color:#3d4d65;
+	margin-top: 1%;
+}
+.left_speed_text{
+	font-size:9em;
+	height: 80%;
+	color:#3d4d65;
+}
+.left_sportparam{
+	width: 100%;
+	height: 20.0%;
+	margin-top: 20px;
+	overflow: hidden;
+	box-sizing:border-box;
+	text-align: center;
+	/* background: #EBEB00; */
+}
+
+.sportparam_item_first{
+	width: 32%;
+	height: 100%;
+	background: #FFFFFF;
+	float: left;
+}
+
+.sportparam_item{
+	width: 32.5%;
+	height: 100%;
+	background: #FFFFFF;
+	float: left;
+	margin-left: 1.5%;
+
+}
+.sportparam_item_last{
+	width: 32.5%;
+	height: 100%;
+	background: #FFFFFF;
+	float: right;
+}
+
+.sportparam_item_dec{
+	font-size:1.5em;
+	color:#3d4d65;
+	margin-top: 2%;
+}
+.sportparam_item_time{
+	font-size:6.4em;
+	color:#3d4d65;
+}
+.sportparam_item_value{
+	font-size:6.4em;
+	color:#3d4d65;
+}
+
+
+
+.body_right{
+	width: 30%;
+	height: 100%; 
+	background: #2b3a40;
+	float: right;
+	/* float: right;
+	text-align: center; */
+}
+.right_head{
+	width: 100%;
+	height: 9.1%; 
+	font-size:1.8em;
+	color:#FFFFFF;
+	padding-top: 20px;
+	padding-left: 20px;
+	overflow: hidden;
+	box-sizing:border-box; 
+
+}
+.right_head_eng{
+	font-size:14px;
+	color:#7b8da0;
+	
+}
+.list_box{
+	width: 100%;
+	height: 90.9%; 
+	overflow:auto;
+}
+
+.right_icon_list_item{
+	width: 100%;
+	height: 15.74%;
+	float: left;
+	padding-left:4.54%;
+	
+	/* background: #FF3e3e; */
+	overflow: hidden;
+	box-sizing:border-box; 
+
+}
+.right_list_headline{
+	width: 96%;
+	height: 2px; 
+	background: #3a484d;
+
+}
+.right_icon_list_item a{
+	cursor：pointer;
+	color:#FFFF00;
+}
+.right_a_index{
+	display: none;
+}
+
+.right_usericon{
+	width: 18%;
+	height: 80%;
+	float: left;
+	margin-top: 2.5%;
+	
+}
+.right_userinfo{
+	color:#FFFFFF;
+	float: left;
+	
+	text-align: left;
+	margin-left: 2.5%;
+	margin-top: 8%;
+
+
+	/* position:relative;
+	    top: 50%;
+	    transform: translateY(-50%); */
+
+}
+
+.right_userinfo_ecgdata{
+	float: right;
+	/* margin-left: 40%; */
+	margin-right: 2%;
+	color:#FFFFFF;
+	margin-top: 8%;
+}
+.right_username{
+	font-size:2.0em;
+}
+
+.right_userother{
+	font-size:1.4em;
+	margin-top: 5%;
+	float: left;
+}
+.right_userother_province{
+	font-size:1.4em;
+	margin-top: 1%;
+	float: left;
+	display: none;
+}
+
+.right_userecgdec{
+	font-size:2.0em;
+	/* margin-top: 30px; */
+	
+}
+
+.right_userecgdata{
+	font-size:2.0em;
+	/* margin-top: 30px; */
+	/* margin-left: 5%; */
+}
+
+.right_userecgdata_rate{
+	float: left;
+}
+.right_userecgdata_kcal{
+	float: left;
+}
+
+/* .page_foot{
+	background:#1d1d1d;
+	color:#FFFFFF;
+	size:15px;
+	margin-top:1.0em;
+	overflow: hidden;
+	box-sizing:border-box;
+} */
+/* .bootm_text{
+	width: 100%;
+	height: 100%;
+	padding-top:3.0em;
+	margin-left:300px;
+	overflow: hidden;
+	box-sizing:border-box;
+}
+ */
+
+.startrunning{
+	width: 100%;
+	height: 48.9%; 
+	background: #FFFFFF;
+	margin-top: 1.85%;
+
+}
+.boack{
+	position: absolute;
+    width: 100%;
+	height: 100%; 
+	/* background: #FFEBCD; */
+
+}
+.canvasarea{
+	width: 100%;
+	height: 100%; 
+	
+}
+/* .background{
+	width: 550px;
+	height: 300px;
+}
+.line{
+	width: 550px;
+	height: 300px;
+}
+
+ 
+#socketConnectState{
+	float: right;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+*/
