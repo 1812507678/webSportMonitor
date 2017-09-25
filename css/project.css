@@ -16,7 +16,7 @@ body{
 } */
 
 .body_left{
-	width: 70%;
+	width: 65%;
 	height: 100%; 
 	background: #EDEDED;
 	float: left;
@@ -110,29 +110,29 @@ body{
 	margin-top: 2%;
 }
 .sportparam_item_time{
-	font-size:6.4em;
-	color:#3d4d65;
+	font-size:5.4em;
+	color:#3d4d65
 }
 .sportparam_item_value{
 	font-size:6.4em;
 	color:#3d4d65;
 }
 
-
-
 .body_right{
-	width: 30%;
+	width: 35%;
 	height: 100%; 
-	background: #2b3a40;
+	/* background: #CDC9C9; */
+	background: #FFFFFF;
 	float: right;
 	/* float: right;
 	text-align: center; */
+	color:#3d4d65;
 }
 .right_head{
 	width: 100%;
 	height: 9.1%; 
 	font-size:1.8em;
-	color:#FFFFFF;
+	color:#008B00;
 	padding-top: 20px;
 	padding-left: 20px;
 	overflow: hidden;
@@ -154,17 +154,22 @@ body{
 	width: 100%;
 	height: 15.74%;
 	float: left;
-	padding-left:4.54%;
+	padding-left:2.54%;
 	
 	/* background: #FF3e3e; */
 	overflow: hidden;
 	box-sizing:border-box; 
 
+	border: 1px solid #ccc;
+    -webkit-box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.1) inset;
+    -webkit-border-bottom-right-radius: 6px 50px;
+
 }
 .right_list_headline{
 	width: 96%;
 	height: 2px; 
-	background: #3a484d;
+	background: #AAAAAA;
+	display: none;
 
 }
 .right_icon_list_item a{
@@ -176,34 +181,70 @@ body{
 }
 
 .right_usericon{
-	width: 18%;
-	height: 80%;
+	width: 100%;
+	height: 100%;
 	float: left;
 	margin-top: 2.5%;
-	
+	border-radius:100%;
 }
 .right_userinfo{
-	color:#FFFFFF;
 	float: left;
-	
+	width: 28%;
 	text-align: left;
 	margin-left: 2.5%;
-	margin-top: 8%;
-
+	/* margin-top: 8%; */
+position: relative;
+	top:50%;
+  	transform:translateY(-50%);
 
 	/* position:relative;
 	    top: 50%;
 	    transform: translateY(-50%); */
 
 }
+.right_list_a{
+	float: left;
+	height: 62.5%;
+	width: 14%;
+	/* margin-top: 3%; */
+	position: relative;
+	top:50%;
+  	transform:translateY(-50%);
+}
+.right_list_content{
+	height: 100%;
+	float: left;
+	width: 84%;
+	
+}
 
 .right_userinfo_ecgdata{
-	float: right;
+	float:left;
+	width: 47.5%;
 	/* margin-left: 40%; */
-	margin-right: 2%;
-	color:#FFFFFF;
-	margin-top: 8%;
+	/* margin-right: 2%; */
+	
+	/* margin-top: 8%; */
+	position: relative;
+	top:50%;
+  	transform:translateY(-50%);
+  	padding: 0px;
+	margin: 0px;
+
 }
+
+.right_userinfo_state{
+	width: 22%;
+	float: left;
+	color: #43CD80;
+	font-size:2.0em;
+	/* margin-top: 8%; */
+	text-align: center;
+	position: relative;
+	top:50%;
+  	transform:translateY(-50%);
+}
+
 .right_username{
 	font-size:2.0em;
 }
@@ -233,10 +274,10 @@ body{
 }
 
 .right_userecgdata_rate{
-	float: left;
+	text-align: center;
 }
 .right_userecgdata_kcal{
-	float: left;
+	text-align: center;
 }
 
 /* .page_foot{
@@ -293,3 +334,29 @@ body{
 }
 
 */
+
+
+.bu_start{
+	float: right;
+	margin-right: 1%;
+	background:#43CD80; color:#FFF;
+	padding: 5px;
+	font-size:1.0em;
+}
+
+.right_userinfo_ecgdata_rate{
+	width: 50%;
+	float: left;
+	font-size:2.0em;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+.right_userinfo_ecgdata_kcal{
+	width: 50%;
+	float: left;
+	font-size:2.0em;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}

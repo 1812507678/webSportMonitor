@@ -28,10 +28,11 @@
 	<div class="page_body">
 		<div class="body_left">
 			<div class="left_head"> 
-				用户实时数据 <br/>
+				用户实时数据 <button type="button" class="bu_start">开始</button> <br/>
 				<div class="left_head_eng">
 					More sports, more safeguard
 				</div>
+
 			</div>
 
 			<div class="left_body">
@@ -82,40 +83,45 @@
 
 			    <div class="right_head"> 
 					<div id="right_head_usercount">在线用户：</div> <br/>
-					<div class="right_head_eng">More sports, more safeguard</div>
+					<!-- <div class="right_head_eng">More sports, more safeguard</div> -->
 				</div>
 			    <div class="list_box" id="list_box" >
 			        <script type="text/template" data-id="list_tpl">
 			       		 
 			            <div class="right_icon_list_item" >
-			            	<div class="right_userinfo_ecgdata">
- 								<div class="right_userecgdec">心率&nbsp;&nbsp;&nbsp;&nbsp;卡路里</div>
- 								<div class="right_userecgdata">
-	 								<p class="right_userecgdata_rate" id="right_userecgdata_rate">&nbsp;&nbsp;$heartRate$</p>
-	 								<p class="right_userecgdata_kcal" id="right_userecgdata_kcal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$kcal$</p>
- 								</div>
-
- 							</div>
-
 			            	<div class="right_list_headline"></div> <!-- 2b3a40 -->
 			                <a href="#" class ="right_list_a" title = "点击查看数据" onclick="changeEcgData(this)"><div class="right_a_index">$webSocketIndex$</div>
 			                	<img src="$iconUrl$" class="right_usericon" />
 			                </a>
-			                <div class="right_userinfo">
-								<p class="right_username">$username$</p>
-								<p class="right_userother_province">$province$ &nbsp;&nbsp;</p>
-								<p class="right_userother">$sex$ &nbsp;&nbsp;&nbsp;&nbsp;</p>  
-								<p class="right_userother">$age$ &nbsp;&nbsp;</p>
+			                <div class ="right_list_content">
+				                <div class="right_userinfo">
+									<p class="right_username">$username$</p>
+									<p class="right_userother_province">$province$ &nbsp;</p>
+									<p class="right_userother">$sex$ &nbsp;&nbsp;$age$</p>  
+									<!-- <p class="right_userother">$age$ &nbsp;&nbsp;</p> -->
 
-								
+									
+				                </div>
+
+				            	<div class="right_userinfo_ecgdata">
+				            		<div class="right_userinfo_ecgdata_rate">
+				            			心率<br/><p class="right_userecgdata_rate_value">$heartRate$</p>
+				            		</div>
+				            		<div class="right_userinfo_ecgdata_kcal">
+										卡路里<br/><p class="right_userecgdata_kcal_value">$kcal$</p>
+				            		</div>
+	 								<!-- <div class="right_userecgdec">心率&nbsp;&nbsp;&nbsp;&nbsp;卡路里</div>
+	 								<div class="right_userecgdata">
+	 										 								<p class="right_userecgdata_rate" id="right_userecgdata_rate">$heartRate$</p>
+	 										 								<p class="right_userecgdata_kcal" id="right_userecgdata_kcal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$kcal$</p>
+	 								</div> -->
+	 							</div>
+	 							<div class="right_userinfo_state" id="right_userecgdata_state">$state$</div>
 			                </div>
- 							
 
 			            </div>
 			        </script>
 			    </div>
-
-
 
 			</div>
 		</div>

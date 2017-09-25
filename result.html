@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>比赛结果-智能运动衣监控</title>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/my_ecgcanvas.js" ></script>
+	<script type="text/javascript" src="js/project.js" ></script>
+	<link rel="stylesheet" href="css/result.css"  />
+	<link rel="icon" href="images/logo_icon.png" type="image/x-icon"/>
+</head>
+
+<body style="height: 100%" class="body_result_style">
+	<div class="page_body">
+		<img src="images/bg.png" class="bg_image">
+		<div class="content">
+			<div class="content_result">
+
+			    <div class="list_result" id="list_result" >
+			        <script type="text/template" data-id="list_result_tpl">
+			           
+				        <div class="result_list_item" >
+				        	<div class="item_user">
+					        	<img src="$iconUrl$" class="ltem_icon">	
+					        	<div class="item_userinfo">
+									<p class="item_username">$username$</p><br/>
+									<p class="item_userother">$province$ &nbsp;&nbsp;</p><br/>
+									<p class="item_userother">$sex$ &nbsp;&nbsp;</p>  
+									<p class="item_userother">$age$ </p>
+					        	</div>
+				        	</div>
+							<div class="item_missbeat">
+								<p class="item_over_count">早搏：$prematureCount$<br/>漏博：$missCount$</p><br/>
+								<p class="item_big_number">$overScore$</p>
+								
+							</div>
+							<div class="item_averageeart">
+								<div class="item_item_number">
+									平均心率<br/><p class="item_item_number_value">$averageHeart$</p>
+								</div>
+								<p class="item_big_number">$averageHeartScore$</p>
+							</div>
+							<div class="item_maxheart">
+								<div class="item_item_number">
+									最大心率<br/><p class="item_item_number_value">$maxHeart$</p>
+								</div>
+								<p class="item_big_number">$maxHeartScore$</p>
+							</div>
+							<div class="item_kcal">
+								<div class="item_item_number">
+									卡路里<br/><p class="item_item_number_value">$kcal$</p>
+								</div>
+								<p class="item_big_number">$kcalScore$</p>
+							</div>
+							<div class="item_allscore">
+								<div class="item_item_number__all">
+									总分<br/><p class="item_item_number_value">$allscore$</p>
+								</div>
+								<p class="item_big_number_all">$rank$</p>
+							</div>
+				        </div>
+			           
+			        </script> 
+
+
+			    </div>
+
+			</div>
+		</div>
+	</div>
+	
+	
+    
+</body>
+</html>
